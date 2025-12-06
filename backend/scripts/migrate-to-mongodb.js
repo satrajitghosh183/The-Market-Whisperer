@@ -13,7 +13,6 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const STORAGE_DIR = path.join(__dirname, '../src/storage');
 const DATA_DIR = path.join(__dirname, '../../data');
-const DATA_DIR = path.join(__dirname, '../../data');
 
 async function loadJson(filePath) {
   try {
