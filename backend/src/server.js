@@ -25,6 +25,13 @@ const PORT = process.env.PORT || 3001;
 // Normalize origin by removing trailing slashes for comparison
 const normalizeOrigin = (origin) => origin ? origin.replace(/\/+$/, '') : '';
 
+// Vercel preview URLs pattern: *.vercel.app
+const isVercelOrigin = (origin) => {
+  if (!origin) return false;
+  // Match any Vercel domain (production or preview)
+  return /^https:\/\/.*\.vercel\.app$/.test(origin);
+};
+
 const allowedOrigins = [
   'https://the-market-whisperer.vercel.app',
   process.env.CORS_ORIGIN ? normalizeOrigin(process.env.CORS_ORIGIN) : null,
@@ -38,22 +45,29 @@ const corsOptions = {
     // Normalize the incoming origin for comparison
     const normalizedOrigin = normalizeOrigin(origin);
     
-    // Check if origin is allowed (normalized comparison)
-    const isAllowed = allowedOrigins.some(allowed => normalizeOrigin(allowed) === normalizedOrigin) || 
-                      process.env.NODE_ENV !== 'production';
+    // Check if origin is allowed:
+    // 1. Exact match in allowedOrigins
+    // 2. Vercel preview/production domain (*.vercel.app)
+    // 3. Development mode (allow all)
+    const isAllowed = 
+      allowedOrigins.some(allowed => normalizeOrigin(allowed) === normalizedOrigin) ||
+      isVercelOrigin(origin) ||
+      process.env.NODE_ENV !== 'production';
     
     if (isAllowed) {
       // Return the EXACT origin that was sent (not normalized) to match browser expectations
       callback(null, origin);
     } else {
-      console.warn(`CORS blocked origin: ${origin}. Allowed origins: ${allowedOrigins.join(', ')}`);
+      console.warn(`CORS blocked origin: ${origin}. Allowed origins: ${allowedOrigins.join(', ')}, Vercel domains, or development mode`);
       callback(new Error('Not allowed by CORS'));
     }
   },
   credentials: true,
   optionsSuccessStatus: 200,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept', 'Origin'],
+  exposedHeaders: ['Content-Length', 'Content-Type'],
+  maxAge: 86400 // 24 hours
 };
 
 app.use(cors(corsOptions));
