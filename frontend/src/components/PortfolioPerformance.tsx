@@ -25,6 +25,7 @@ interface CurrentPerformance {
   totalReturnPercent: number;
   cashBalance: number;
   totalValue: number;
+  timestamp?: string;
 }
 
 export default function PortfolioPerformance() {
