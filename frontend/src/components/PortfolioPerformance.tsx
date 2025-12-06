@@ -42,9 +42,12 @@ export default function PortfolioPerformance() {
         // Only start fetching performance after portfolio is loaded
         fetchPerformance();
         
-        // Auto-refresh every 5 seconds
+        // Auto-refresh every 5 seconds to sync with PortfolioView
         refreshIntervalRef.current = setInterval(() => {
-          fetchPerformance();
+          // Refresh portfolio first, then performance
+          fetchPortfolio().then(() => {
+            fetchPerformance();
+          });
         }, 5000);
       });
     }
@@ -87,44 +90,81 @@ export default function PortfolioPerformance() {
     }
 
     try {
-      // Get current performance
-      const perfResponse = await axios.get(
-        `${API_URL}/api/performance/current/${portfolio.portfolioId}`,
-        { params: { userId: user.userId } }
+      // Use the same portfolio endpoint as PortfolioView to ensure consistency
+      const portfolioResponse = await axios.get(
+        `${API_URL}/api/portfolio/${portfolio.portfolioId}`
       );
 
-      if (perfResponse.data.success) {
-        setPerformance(perfResponse.data.performance);
-        
-        // Get history based on time range
-        const days = getDaysForRange(timeRange);
-        const historyResponse = await axios.get(
-          `${API_URL}/api/performance/history/${portfolio.portfolioId}`,
-          { params: { userId: user.userId, days } }
+      if (portfolioResponse.data) {
+        const portfolioData = portfolioResponse.data;
+        const walletResponse = await axios.get(
+          `${API_URL}/api/payment/wallet/${user.userId}`
         );
+        const cashBalance = walletResponse.data?.wallet?.availableBalance || 0;
 
-        if (historyResponse.data.success) {
-          // Format history data for chart
-          const formattedHistory = formatHistoryData(historyResponse.data.history);
-          setHistory(formattedHistory);
+        // Calculate performance metrics from portfolio data (same as PortfolioView)
+        const totalPortfolioValue = portfolioData.totalValue || 0;
+        const unrealizedPnL = portfolioData.unrealizedPnL || 0;
+        const realizedPnL = portfolioData.positions?.reduce((sum: number, pos: any) => 
+          sum + (pos.realizedPnL || 0), 0) || 0;
+        const totalPnL = unrealizedPnL + realizedPnL;
+
+        // Get history for chart
+        const days = getDaysForRange(timeRange);
+        let historyData: any[] = [];
+        try {
+          const historyResponse = await axios.get(
+            `${API_URL}/api/performance/history/${portfolio.portfolioId}`,
+            { params: { userId: user.userId, days } }
+          );
+          if (historyResponse.data.success) {
+            historyData = historyResponse.data.history;
+          }
+        } catch (historyError) {
+          console.warn('Could not fetch history, using empty array:', historyError);
         }
+
+        // Calculate daily change from history
+        const yesterday = historyData.length > 1 ? historyData[historyData.length - 2] : null;
+        const dailyChange = yesterday 
+          ? totalPortfolioValue - (yesterday.value || yesterday.totalPortfolioValue || totalPortfolioValue)
+          : 0;
+        const dailyChangePercent = yesterday && (yesterday.value || yesterday.totalPortfolioValue) > 0
+          ? (dailyChange / (yesterday.value || yesterday.totalPortfolioValue)) * 100
+          : 0;
+
+        // Calculate total return
+        const initialValue = historyData.length > 0 
+          ? (historyData[0].value || historyData[0].totalPortfolioValue || totalPortfolioValue)
+          : totalPortfolioValue;
+        const totalReturn = totalPortfolioValue - initialValue;
+        const totalReturnPercent = initialValue > 0
+          ? (totalReturn / initialValue) * 100
+          : 0;
+
+        setPerformance({
+          totalPortfolioValue,
+          cashBalance,
+          unrealizedPnL,
+          realizedPnL,
+          totalPnL,
+          dailyChange,
+          dailyChangePercent,
+          totalReturn,
+          totalReturnPercent,
+          timestamp: new Date().toISOString()
+        });
+
+        // Format history data for chart
+        const formattedHistory = formatHistoryData(historyData);
+        setHistory(formattedHistory);
       }
     } catch (error: any) {
       console.error('Error fetching performance:', error);
       // If error, still set loading to false and show what we can
       if (error?.response?.status === 404 || error?.response?.status === 400) {
-        // Portfolio might not have performance data yet, create initial snapshot
-        try {
-          await axios.post(
-            `${API_URL}/api/performance/snapshot`,
-            { portfolioId: portfolio.portfolioId, userId: user.userId }
-          );
-          // Retry fetching
-          setTimeout(() => fetchPerformance(), 1000);
-          return;
-        } catch (snapshotError) {
-          console.error('Error creating snapshot:', snapshotError);
-        }
+        // Portfolio might not exist yet
+        setLoading(false);
       }
     } finally {
       setLoading(false);
@@ -145,29 +185,20 @@ export default function PortfolioPerformance() {
 
   const formatHistoryData = (data: any[]): PerformanceData[] => {
     if (data.length === 0) {
-      // Generate sample data if no history
-      const now = new Date();
-      const sampleData: PerformanceData[] = [];
-      const initialValue = performance?.totalPortfolioValue || 10000;
-      
-      for (let i = 29; i >= 0; i--) {
-        const date = new Date(now);
-        date.setDate(date.getDate() - i);
-        const randomChange = (Math.random() - 0.5) * 200;
-        sampleData.push({
-          timestamp: date.toISOString(),
-          value: initialValue + randomChange * (30 - i) / 30,
-          totalPnL: randomChange * (30 - i) / 30,
-          unrealizedPnL: randomChange * (30 - i) / 30,
-          realizedPnL: 0
-        });
-      }
-      return sampleData;
+      // If no history, create a single point with current value
+      const currentValue = performance?.totalPortfolioValue || portfolio?.totalValue || 0;
+      return [{
+        timestamp: new Date().toISOString(),
+        value: currentValue,
+        totalPnL: performance?.totalPnL || 0,
+        unrealizedPnL: performance?.unrealizedPnL || 0,
+        realizedPnL: performance?.realizedPnL || 0
+      }];
     }
 
     return data.map(item => ({
       timestamp: item.timestamp,
-      value: item.value || item.totalPortfolioValue || 0,
+      value: item.value || item.totalPortfolioValue || item.totalValue || 0,
       totalPnL: item.totalPnL || 0,
       unrealizedPnL: item.unrealizedPnL || 0,
       realizedPnL: item.realizedPnL || 0
