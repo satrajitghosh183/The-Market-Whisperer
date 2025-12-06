@@ -1,7 +1,9 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useAuth } from '@/contexts/AuthContext'
+import ForgotPassword from './ForgotPassword'
+import ResetPassword from './ResetPassword'
 
 export default function LoginForm() {
   const [isLogin, setIsLogin] = useState(true)
@@ -10,7 +12,20 @@ export default function LoginForm() {
   const [role, setRole] = useState('investor')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [showForgotPassword, setShowForgotPassword] = useState(false)
+  const [showResetPassword, setShowResetPassword] = useState(false)
   const { login, register } = useAuth()
+
+  // Check if there's a reset token in URL
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const urlParams = new URLSearchParams(window.location.search)
+      const token = urlParams.get('token')
+      if (token) {
+        setShowResetPassword(true)
+      }
+    }
+  }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -28,6 +43,14 @@ export default function LoginForm() {
     } finally {
       setLoading(false)
     }
+  }
+
+  if (showResetPassword) {
+    return <ResetPassword onBack={() => setShowResetPassword(false)} />
+  }
+
+  if (showForgotPassword) {
+    return <ForgotPassword onBack={() => setShowForgotPassword(false)} />
   }
 
   return (
@@ -55,9 +78,20 @@ export default function LoginForm() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              Password
-            </label>
+            <div className="flex justify-between items-center mb-1">
+              <label className="block text-sm font-medium text-gray-700">
+                Password
+              </label>
+              {isLogin && (
+                <button
+                  type="button"
+                  onClick={() => setShowForgotPassword(true)}
+                  className="text-sm text-blue-600 hover:text-blue-800"
+                >
+                  Forgot password?
+                </button>
+              )}
+            </div>
             <input
               type="password"
               value={password}
