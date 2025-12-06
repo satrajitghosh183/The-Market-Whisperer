@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useAuth } from '@/contexts/AuthContext'
+import { API_URL } from '@/config/api'
 
 interface Wallet {
   walletId: string
@@ -34,8 +35,8 @@ export default function AccountSummary() {
   const fetchAccountData = async () => {
     try {
       const [profileRes, portfoliosRes] = await Promise.all([
-        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/profile/${user?.userId}`),
-        axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/user/${user?.userId}`)
+        axios.get(`${API_URL}/api/auth/profile/${user?.userId}`),
+        axios.get(`${API_URL}/api/portfolio/user/${user?.userId}`)
       ])
       
       setProfile(profileRes.data.user)

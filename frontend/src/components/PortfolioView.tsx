@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
 import { useAuth } from '@/contexts/AuthContext'
 import PortfolioChart from './PortfolioChart'
+import { API_URL, WS_URL } from '@/config/api'
 
 interface Position {
   positionId: string
@@ -57,7 +58,7 @@ export default function PortfolioView() {
     
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/user/${user.userId}`
+        `${API_URL}/api/portfolio/user/${user.userId}`
       )
       if (response.data.length > 0) {
         const portfolioData = response.data[0]
@@ -76,7 +77,7 @@ export default function PortfolioView() {
   }
 
   const setupWebSocket = (portfolioId: string, userId: string, positions?: Position[]) => {
-    const wsUrl = process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:3001'
+    const wsUrl = WS_URL
     const ws = new WebSocket(`${wsUrl}/ws`)
     
     ws.onopen = () => {
@@ -171,7 +172,7 @@ export default function PortfolioView() {
     setGenerating(true)
     try {
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/generate`,
+        `${API_URL}/api/portfolio/generate`,
         {
           userId: user?.userId,
           numStocks: 20,
