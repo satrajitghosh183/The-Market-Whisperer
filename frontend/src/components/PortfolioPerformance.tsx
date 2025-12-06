@@ -108,10 +108,10 @@ export default function PortfolioPerformance() {
           setHistory(formattedHistory);
         }
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error fetching performance:', error);
       // If error, still set loading to false and show what we can
-      if (error.response?.status === 404 || error.response?.status === 400) {
+      if (error?.response?.status === 404 || error?.response?.status === 400) {
         // Portfolio might not have performance data yet, create initial snapshot
         try {
           await axios.post(

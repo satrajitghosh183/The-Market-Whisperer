@@ -81,7 +81,7 @@ export default function StockChart({ ticker }: { ticker: string }) {
           low: parseFloat(item.low) || 0,
           volume: parseInt(item.volume) || 0
         };
-      }).sort((a, b) => {
+      }).sort((a: any, b: any) => {
         // Sort by date if available, otherwise by index
         if (a.dateValue && b.dateValue && a.dateValue !== b.dateValue) {
           return new Date(a.dateValue).getTime() - new Date(b.dateValue).getTime();
