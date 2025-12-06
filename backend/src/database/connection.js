@@ -28,8 +28,12 @@ export async function connectMongoDB() {
   }
 
   connectionPromise = mongoose.connect(MONGODB_URI, {
-    serverSelectionTimeoutMS: 5000,
+    serverSelectionTimeoutMS: 10000,
     socketTimeoutMS: 45000,
+    tls: true,
+    tlsAllowInvalidCertificates: false,
+    retryWrites: true,
+    w: 'majority',
   })
     .then(() => {
       isConnected = true;

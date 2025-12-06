@@ -112,7 +112,8 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📊 WebSocket server ready`);
   if (process.env.NODE_ENV === 'production') {
-    console.log(`🌐 Production mode - CORS enabled for: ${process.env.CORS_ORIGIN || 'all origins'}`);
+    const corsOriginDisplay = process.env.CORS_ORIGIN ? normalizeOrigin(process.env.CORS_ORIGIN) : 'all origins';
+    console.log(`🌐 Production mode - CORS enabled for: ${corsOriginDisplay}`);
   }
 });
 
