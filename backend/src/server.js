@@ -35,13 +35,16 @@ const corsOptions = {
     // Allow requests with no origin (like mobile apps or curl requests)
     if (!origin) return callback(null, true);
     
-    // Normalize the incoming origin
+    // Normalize the incoming origin for comparison
     const normalizedOrigin = normalizeOrigin(origin);
     
     // Check if origin is allowed (normalized comparison)
-    if (allowedOrigins.some(allowed => normalizeOrigin(allowed) === normalizedOrigin) || 
-        process.env.NODE_ENV !== 'production') {
-      callback(null, true);
+    const isAllowed = allowedOrigins.some(allowed => normalizeOrigin(allowed) === normalizedOrigin) || 
+                      process.env.NODE_ENV !== 'production';
+    
+    if (isAllowed) {
+      // Return the EXACT origin that was sent (not normalized) to match browser expectations
+      callback(null, origin);
     } else {
       console.warn(`CORS blocked origin: ${origin}. Allowed origins: ${allowedOrigins.join(', ')}`);
       callback(new Error('Not allowed by CORS'));
