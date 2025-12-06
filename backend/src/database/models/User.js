@@ -43,6 +43,14 @@ const userSchema = new mongoose.Schema({
     enum: ['investor', 'trader', 'auto-trader'],
     default: 'investor'
   },
+  resetPasswordToken: {
+    type: String,
+    default: null
+  },
+  resetPasswordExpires: {
+    type: Date,
+    default: null
+  },
   createdAt: {
     type: Date,
     default: Date.now

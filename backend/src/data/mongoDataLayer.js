@@ -54,6 +54,34 @@ export const mongoDataLayer = {
     }
   },
 
+  updateUser: async (userId, updates) => {
+    try {
+      if (isMongoDBAvailable()) {
+        const user = await User.findOneAndUpdate(
+          { userId },
+          { $set: updates },
+          { new: true }
+        );
+        return user ? user.toObject() : null;
+      }
+    } catch (error) {
+      console.error('MongoDB updateUser error:', error);
+      throw error;
+    }
+  },
+
+  getAllUsers: async () => {
+    try {
+      if (isMongoDBAvailable()) {
+        const users = await User.find({});
+        return users.map(u => u.toObject());
+      }
+    } catch (error) {
+      console.error('MongoDB getAllUsers error:', error);
+      throw error;
+    }
+  },
+
   // Wallets
   createWallet: async (userId, initialBalance = 0) => {
     try {

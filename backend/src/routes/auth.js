@@ -1,6 +1,7 @@
 import express from 'express';
 import bcrypt from 'bcryptjs';
 import { unifiedDataLayer as dataLayer } from '../data/unifiedDataLayer.js';
+import { PasswordResetService } from '../services/passwordResetService.js';
 
 const router = express.Router();
 
@@ -110,6 +111,76 @@ router.get('/profile/:userId', async (req, res) => {
   } catch (error) {
     console.error('Profile fetch error:', error);
     res.status(500).json({ error: 'Failed to fetch profile' });
+  }
+});
+
+// Forgot password - Request password reset
+router.post('/forgot-password', async (req, res) => {
+  try {
+    const { email } = req.body;
+    
+    if (!email) {
+      return res.status(400).json({ error: 'Email is required' });
+    }
+
+    const result = await PasswordResetService.requestPasswordReset(email);
+    
+    res.json(result);
+  } catch (error) {
+    console.error('Forgot password error:', error);
+    res.status(500).json({ 
+      success: false,
+      error: error.message || 'Failed to process password reset request' 
+    });
+  }
+});
+
+// Reset password - Set new password with token
+router.post('/reset-password', async (req, res) => {
+  try {
+    const { token, newPassword } = req.body;
+    
+    if (!token || !newPassword) {
+      return res.status(400).json({ error: 'Token and new password are required' });
+    }
+
+    if (newPassword.length < 6) {
+      return res.status(400).json({ error: 'Password must be at least 6 characters long' });
+    }
+
+    const result = await PasswordResetService.resetPassword(token, newPassword);
+    
+    res.json(result);
+  } catch (error) {
+    console.error('Reset password error:', error);
+    res.status(400).json({ 
+      success: false,
+      error: error.message || 'Failed to reset password' 
+    });
+  }
+});
+
+// Verify reset token
+router.get('/verify-reset-token/:token', async (req, res) => {
+  try {
+    const { token } = req.params;
+    
+    if (!token) {
+      return res.status(400).json({ error: 'Token is required' });
+    }
+
+    const isValid = await PasswordResetService.verifyResetToken(token);
+    
+    res.json({ 
+      valid: isValid,
+      message: isValid ? 'Token is valid' : 'Token is invalid or expired'
+    });
+  } catch (error) {
+    console.error('Verify token error:', error);
+    res.status(500).json({ 
+      valid: false,
+      error: 'Failed to verify token' 
+    });
   }
 });
 

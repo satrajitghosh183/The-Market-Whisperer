@@ -85,6 +85,19 @@ export const dataLayer = {
   getUserByEmail: async (email) => {
     return Object.values(storage.users).find(u => u.email === email) || null;
   },
+
+  updateUser: async (userId, updates) => {
+    if (storage.users[userId]) {
+      storage.users[userId] = { ...storage.users[userId], ...updates };
+      await saveJson(USERS_FILE, storage.users);
+      return storage.users[userId];
+    }
+    return null;
+  },
+
+  getAllUsers: async () => {
+    return Object.values(storage.users);
+  },
   
   // Wallets
   createWallet: async (userId, initialBalance = 0) => {

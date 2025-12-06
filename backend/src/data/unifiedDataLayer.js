@@ -43,6 +43,30 @@ export const unifiedDataLayer = {
     return await fileDataLayer.getUserByEmail(email);
   },
 
+  updateUser: async (userId, updates) => {
+    try {
+      if (isMongoDBAvailable()) {
+        const user = await mongoDataLayer.updateUser(userId, updates);
+        if (user) return user;
+      }
+    } catch (error) {
+      console.warn('MongoDB updateUser failed, using file storage:', error.message);
+    }
+    return await fileDataLayer.updateUser(userId, updates);
+  },
+
+  getAllUsers: async () => {
+    try {
+      if (isMongoDBAvailable()) {
+        const users = await mongoDataLayer.getAllUsers();
+        if (users) return users;
+      }
+    } catch (error) {
+      console.warn('MongoDB getAllUsers failed, using file storage:', error.message);
+    }
+    return await fileDataLayer.getAllUsers();
+  },
+
   // Wallets
   createWallet: async (userId, initialBalance = 0) => {
     try {
