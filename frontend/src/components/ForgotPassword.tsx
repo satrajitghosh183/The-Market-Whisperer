@@ -30,12 +30,16 @@ export default function ForgotPassword({ onBack }: ForgotPasswordProps) {
         email
       })
 
-      if (response.data.success) {
+      if (response.data.success && response.data.resetToken) {
         setSuccess(true)
-        // In development, show the token. In production, this would be sent via email
-        if (response.data.resetToken) {
-          setResetToken(response.data.resetToken)
-        }
+        // Automatically use the token - it's returned in the response
+        setResetToken(response.data.resetToken)
+        // The form will automatically show password reset fields
+      } else if (response.data.success && !response.data.resetToken) {
+        // User doesn't exist or no token returned
+        setError(response.data.error || 'No account found with this email. Please check your email address.')
+      } else {
+        setError(response.data.error || 'Failed to request password reset')
       }
     } catch (err: any) {
       setError(err.response?.data?.error || 'Failed to request password reset')

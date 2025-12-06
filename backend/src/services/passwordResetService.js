@@ -26,11 +26,18 @@ export class PasswordResetService {
       const user = await dataLayer.getUserByEmail(email);
       
       if (!user) {
-        // Don't reveal if user exists for security
+        // For development: return error so user knows email doesn't exist
+        // In production, you'd return success to prevent email enumeration
+        if (process.env.NODE_ENV === 'development') {
+          return {
+            success: false,
+            error: 'No account found with this email address.'
+          };
+        }
+        // Production: don't reveal if user exists for security
         return {
           success: true,
           message: 'If an account exists with this email, a password reset link has been sent.',
-          // In production, always return success to prevent email enumeration
         };
       }
 
@@ -62,11 +69,11 @@ export class PasswordResetService {
       }
 
       // In production, send email here
-      // For now, return token in response (development only)
+      // For development, return token in response so user can reset immediately
       return {
         success: true,
-        message: 'Password reset token generated successfully.',
-        resetToken: resetToken, // Remove this in production - only for development
+        message: 'Password reset token generated successfully. You can now reset your password.',
+        resetToken: resetToken, // Always return token for immediate use (no email needed)
         expiresAt: resetTokenExpires.toISOString(),
         // In production, you would send an email with a link like:
         // `${process.env.FRONTEND_URL}/reset-password?token=${resetToken}`
