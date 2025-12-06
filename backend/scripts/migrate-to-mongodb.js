@@ -232,6 +232,95 @@ async function migrate() {
     }
     console.log(`   ✅ Migrated ${migrated} ledger entries, skipped ${skipped} (already exist)\n`);
 
+    // Migrate Stock Data Files
+    migrated = 0;
+    skipped = 0;
+    console.log('📊 Migrating stock data files...');
+    try {
+      const files = await fs.readdir(DATA_DIR);
+      const txtFiles = files.filter(f => f.endsWith('.txt') || f.endsWith('.TXT'));
+      console.log(`   Found ${txtFiles.length} stock data files to process...\n`);
+
+      for (const fileName of txtFiles) {
+        try {
+          const tickerMatch = fileName.match(/^(.+?)\.(us\.)?txt$/i);
+          if (!tickerMatch) {
+            console.warn(`   ⚠️  Skipping file with unexpected format: ${fileName}`);
+            continue;
+          }
+
+          const ticker = tickerMatch[1].toUpperCase();
+          const filePath = path.join(DATA_DIR, fileName);
+          
+          // Check if ticker already has data in MongoDB
+          const existingCount = await StockData.countDocuments({ ticker });
+          if (existingCount > 0) {
+            console.log(`   ⏭️  Skipping ${ticker} (${existingCount} records already exist)`);
+            skipped++;
+            continue;
+          }
+
+          // Read and parse CSV file
+          const records = [];
+          await new Promise((resolve, reject) => {
+            createReadStream(filePath)
+              .pipe(csv({
+                skipLinesWithError: false,
+                headers: ['ticker', 'period', 'date', 'time', 'open', 'high', 'low', 'close', 'volume', 'openint']
+              }))
+              .on('data', (row) => {
+                // Skip header row if it looks like headers
+                if (row.ticker && (row.ticker.includes('TICKER') || row.ticker === 'Ticker')) {
+                  return;
+                }
+                
+                // Only add rows with valid data
+                if (row.date && row.close && !isNaN(parseFloat(row.close))) {
+                  records.push({
+                    ticker: ticker,
+                    date: row.date,
+                    open: parseFloat(row.open) || 0,
+                    high: parseFloat(row.high) || 0,
+                    low: parseFloat(row.low) || 0,
+                    close: parseFloat(row.close) || 0,
+                    volume: parseFloat(row.volume) || 0
+                  });
+                }
+              })
+              .on('end', resolve)
+              .on('error', reject);
+          });
+
+          if (records.length > 0) {
+            // Insert in batches to avoid memory issues
+            const batchSize = 1000;
+            for (let i = 0; i < records.length; i += batchSize) {
+              const batch = records.slice(i, i + batchSize);
+              await StockData.insertMany(batch, { ordered: false }).catch(err => {
+                // Ignore duplicate key errors
+                if (err.code !== 11000) {
+                  throw err;
+                }
+              });
+            }
+            migrated += records.length;
+            console.log(`   ✅ Migrated ${ticker}: ${records.length} records`);
+          } else {
+            console.warn(`   ⚠️  No valid data found in ${fileName}`);
+          }
+        } catch (error) {
+          console.error(`   ❌ Error processing ${fileName}:`, error.message);
+        }
+      }
+      console.log(`\n   ✅ Stock data migration complete: ${migrated} records migrated, ${skipped} tickers skipped (already exist)\n`);
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        console.warn('   ⚠️  Data directory not found. Skipping stock data migration.');
+      } else {
+        console.error('   ❌ Error migrating stock data:', error.message);
+      }
+    }
+
     console.log('✅ Migration completed successfully!');
     console.log('\n💡 Note: File-based data is preserved as backup.');
     console.log('   You can delete the JSON files in src/storage/ after verifying MongoDB data.\n');
