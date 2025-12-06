@@ -57,14 +57,104 @@ export class QuantService {
       const sentimentData = await SentimentService.analyzeNewsSentiment(newsArticles);
       
       // Calculate sentiment-price correlation if we have price history
-      if (data.length >= 7 && sentimentData.individualSentiments) {
-        const recentPrices = data.slice(-7).map(d => d.close);
-        const priceChanges = recentPrices.slice(1).map((p, i) => (p - recentPrices[i]) / recentPrices[i]);
-        const recentSentiments = sentimentData.individualSentiments.slice(0, Math.min(6, sentimentData.individualSentiments.length));
-        
-        if (priceChanges.length === recentSentiments.length) {
-          const sentScores = recentSentiments.map(s => s.score);
-          sentimentData.sentVsPrice = SentimentService.calculateSentimentPriceCorrelation(sentScores, priceChanges);
+      // Use a rolling window approach: sentiment from articles should correlate with subsequent price movements
+      if (data.length >= 7 && sentimentData.individualSentiments && sentimentData.individualSentiments.length > 0) {
+        try {
+          // Get more price data points for better correlation
+          const priceWindow = Math.min(data.length, 30); // Use up to 30 days
+          const recentPrices = data.slice(-priceWindow).map(d => parseFloat(d.close) || 0);
+          
+          // Calculate daily price returns (percentage changes)
+          const priceReturns = [];
+          for (let i = 0; i < recentPrices.length - 1; i++) {
+            if (recentPrices[i] > 0) {
+              const return_pct = (recentPrices[i + 1] - recentPrices[i]) / recentPrices[i];
+              priceReturns.push(return_pct);
+            }
+          }
+          
+          // Get sentiment scores - these represent sentiment from news articles
+          // We'll use a rolling average approach: average sentiment over a window correlates with price returns
+          const sentimentScores = sentimentData.individualSentiments
+            .map(s => {
+              if (typeof s === 'object' && s.score !== undefined) {
+                return parseFloat(s.score) || 0.5;
+              }
+              return parseFloat(s) || 0.5;
+            })
+            .filter(s => !isNaN(s) && isFinite(s));
+          
+          if (sentimentScores.length === 0 || priceReturns.length === 0) {
+            sentimentData.sentVsPrice = 0.0;
+            console.warn(`⚠️  No valid sentiment or price data for correlation for ${ticker}`);
+          } else {
+            // Use rolling window: average sentiment over N articles correlates with average price return
+            // This accounts for the fact that sentiment affects price over time, not instantaneously
+            const windowSize = Math.min(5, Math.floor(sentimentScores.length / 2), Math.floor(priceReturns.length / 2));
+            
+            if (windowSize >= 2) {
+              // Calculate rolling averages
+              const sentimentAverages = [];
+              const priceReturnAverages = [];
+              
+              // Rolling average of sentiments
+              for (let i = 0; i <= sentimentScores.length - windowSize; i++) {
+                const window = sentimentScores.slice(i, i + windowSize);
+                const avg = window.reduce((sum, s) => sum + s, 0) / window.length;
+                sentimentAverages.push(avg);
+              }
+              
+              // Rolling average of price returns (aligned with sentiment)
+              for (let i = 0; i <= priceReturns.length - windowSize; i++) {
+                const window = priceReturns.slice(i, i + windowSize);
+                const avg = window.reduce((sum, p) => sum + p, 0) / window.length;
+                priceReturnAverages.push(avg);
+              }
+              
+              // Align arrays to same length
+              const minLength = Math.min(sentimentAverages.length, priceReturnAverages.length);
+              if (minLength >= 2) {
+                const alignedSentiments = sentimentAverages.slice(0, minLength);
+                const alignedReturns = priceReturnAverages.slice(0, minLength);
+                
+                // Calculate correlation
+                sentimentData.sentVsPrice = SentimentService.calculateSentimentPriceCorrelation(
+                  alignedSentiments,
+                  alignedReturns
+                );
+                
+                console.log(`📊 Sentiment-Price Correlation for ${ticker}: ${sentimentData.sentVsPrice.toFixed(4)} (${minLength} windows, ${sentimentScores.length} articles, ${priceReturns.length} price points)`);
+              } else {
+                sentimentData.sentVsPrice = 0.0;
+                console.warn(`⚠️  Not enough aligned data for correlation (${minLength} windows)`);
+              }
+            } else {
+              // Fallback: simple correlation if we don't have enough data for rolling windows
+              const minLength = Math.min(sentimentScores.length, priceReturns.length);
+              if (minLength >= 2) {
+                const alignedSentiments = sentimentScores.slice(0, minLength);
+                const alignedReturns = priceReturns.slice(0, minLength);
+                sentimentData.sentVsPrice = SentimentService.calculateSentimentPriceCorrelation(
+                  alignedSentiments,
+                  alignedReturns
+                );
+                console.log(`📊 Sentiment-Price Correlation for ${ticker}: ${sentimentData.sentVsPrice.toFixed(4)} (simple, ${minLength} points)`);
+              } else {
+                sentimentData.sentVsPrice = 0.0;
+              }
+            }
+          }
+        } catch (error) {
+          console.error(`Error calculating sentiment-price correlation for ${ticker}:`, error);
+          sentimentData.sentVsPrice = 0.0;
+        }
+      } else {
+        sentimentData.sentVsPrice = 0.0;
+        if (!sentimentData.individualSentiments || sentimentData.individualSentiments.length === 0) {
+          console.warn(`⚠️  No individual sentiment data for ${ticker}`);
+        }
+        if (data.length < 7) {
+          console.warn(`⚠️  Not enough price data for ${ticker} (${data.length} points, need 7+)`);
         }
       }
       

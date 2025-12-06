@@ -71,12 +71,15 @@ export class SentimentService {
         : 0.5;
       const sentShock = Math.abs(sentMean_3d - sevenDayMean);
 
+      // Return individual sentiment scores (not objects) for easier correlation calculation
+      const sentimentScores = sentiments.map(s => typeof s === 'object' ? s.score : s);
+      
       return {
         sentMean_3d: sentMean_3d,
         sentShock: sentShock,
         sentVsPrice: 0.0, // Will be calculated when price data is available
         articleCount: articles.length,
-        individualSentiments: sentiments
+        individualSentiments: sentimentScores // Store as array of numbers for easier correlation
       };
     } catch (error) {
       console.error('Error analyzing news sentiment:', error);
