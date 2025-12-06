@@ -153,6 +153,7 @@ export default function PortfolioPerformance() {
           dailyChangePercent,
           totalReturn,
           totalReturnPercent,
+          totalValue: totalPortfolioValue, // Add missing totalValue property
           timestamp: new Date().toISOString()
         });
 
