@@ -42153,5 +42153,901 @@
     },
     "txId": "tx_1765048810848_2zj77xwnp",
     "timestamp": "2025-12-06T19:20:10.848Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:21:10.269Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048870270_hma02m61q",
+    "timestamp": "2025-12-06T19:21:10.270Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:21:10.471Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048870473_0y6g8mom2",
+    "timestamp": "2025-12-06T19:21:10.473Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:21:10.610Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048870611_kbl0qkev7",
+    "timestamp": "2025-12-06T19:21:10.611Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:22:10.435Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048930436_4gy82ijfq",
+    "timestamp": "2025-12-06T19:22:10.436Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:22:10.616Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048930617_1pd7xyy88",
+    "timestamp": "2025-12-06T19:22:10.617Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:22:10.769Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048930769_zfeot1yvf",
+    "timestamp": "2025-12-06T19:22:10.769Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:23:10.254Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048990255_lkaqnxf27",
+    "timestamp": "2025-12-06T19:23:10.255Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:23:10.394Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048990395_w034n9z97",
+    "timestamp": "2025-12-06T19:23:10.395Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:23:10.713Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765048990714_0smq15sut",
+    "timestamp": "2025-12-06T19:23:10.714Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:24:10.214Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049050215_2zr3i0nm4",
+    "timestamp": "2025-12-06T19:24:10.215Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:24:10.371Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049050372_4ml79tiur",
+    "timestamp": "2025-12-06T19:24:10.372Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:24:10.540Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049050543_4a34m91ag",
+    "timestamp": "2025-12-06T19:24:10.543Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:25:10.507Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049110507_p7m1uej7r",
+    "timestamp": "2025-12-06T19:25:10.507Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:25:10.677Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049110678_t39ezzk44",
+    "timestamp": "2025-12-06T19:25:10.678Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:25:10.872Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049110873_eogdqtgb4",
+    "timestamp": "2025-12-06T19:25:10.873Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:26:10.231Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049170233_4qqhizmfd",
+    "timestamp": "2025-12-06T19:26:10.233Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:26:10.375Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049170376_oypit26y4",
+    "timestamp": "2025-12-06T19:26:10.376Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:26:10.735Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049170736_t6335sgd5",
+    "timestamp": "2025-12-06T19:26:10.736Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:09.936Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049229937_abyexuwvp",
+    "timestamp": "2025-12-06T19:27:09.937Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:10.076Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049230077_iu1gb9hhb",
+    "timestamp": "2025-12-06T19:27:10.077Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:10.213Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049230214_jtgnnpnr9",
+    "timestamp": "2025-12-06T19:27:10.214Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:47.425Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049267426_sr51zctif",
+    "timestamp": "2025-12-06T19:27:47.426Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:47.583Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049267584_qljz8k1o4",
+    "timestamp": "2025-12-06T19:27:47.584Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:47.725Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049267726_cgdovxfhk",
+    "timestamp": "2025-12-06T19:27:47.727Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:27:48.920Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049268921_4ngeb0one",
+    "timestamp": "2025-12-06T19:27:48.921Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:10.250Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049290251_ie31sm19i",
+    "timestamp": "2025-12-06T19:28:10.251Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:10.398Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049290399_1nnrb3cu3",
+    "timestamp": "2025-12-06T19:28:10.399Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:10.546Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049290547_fqmb54ect",
+    "timestamp": "2025-12-06T19:28:10.547Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:26.929Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049306931_8sxxc8dla",
+    "timestamp": "2025-12-06T19:28:26.931Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:27.071Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049307074_c4lnogxyg",
+    "timestamp": "2025-12-06T19:28:27.074Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:27.221Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049307223_w1bkefbw4",
+    "timestamp": "2025-12-06T19:28:27.223Z"
+  },
+  {
+    "walletId": "wallet_1762133274721",
+    "userId": "user_1762133274719",
+    "type": "portfolio_snapshot",
+    "amount": 8376.4304,
+    "description": "Portfolio value snapshot",
+    "metadata": {
+      "portfolioId": "portfolio_1765043526873",
+      "userId": "user_1762133274719",
+      "timestamp": "2025-12-06T19:28:28.951Z",
+      "totalValue": 33.595,
+      "cashBalance": 8342.8354,
+      "totalPortfolioValue": 8376.4304,
+      "unrealizedPnL": 3.5289,
+      "realizedPnL": 0,
+      "totalPnL": 3.5289,
+      "positionCount": 1,
+      "positions": [
+        {
+          "ticker": "AFOS",
+          "shares": 1,
+          "value": 33.595
+        }
+      ]
+    },
+    "txId": "tx_1765049308952_6vnvwwsn0",
+    "timestamp": "2025-12-06T19:28:28.952Z"
   }
 ]

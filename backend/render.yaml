@@ -3,7 +3,7 @@ services:
     name: market-whisperer-backend
     env: node
     plan: free
-    buildCommand: npm install
+    buildCommand: npm install && pip3 install -r ../quant-engine/requirements.txt || echo "Python dependencies optional"
     startCommand: npm start
     envVars:
       - key: NODE_ENV
