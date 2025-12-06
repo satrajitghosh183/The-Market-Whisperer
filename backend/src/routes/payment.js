@@ -140,23 +140,36 @@ router.post('/confirm', validateInput({
     });
     
     // Add ledger entry
+    const cardLast4 = confirmedPayment.payment_method?.card?.last4 || paymentMethod.cardNumber.slice(-4);
+    const cardBrand = confirmedPayment.payment_method?.card?.brand || 'unknown';
+    const chargeId = confirmedPayment.charges?.data?.[0]?.id || confirmedPayment.id;
+    
     await dataLayer.addLedgerEntry({
       walletId: wallet.walletId,
       userId,
       type: 'deposit',
       amount: depositAmount,
-      description: `Deposit via payment - Card ending in ${confirmedPayment.payment_method.card.last4}`,
+      description: `Deposit via payment - Card ending in ${cardLast4}`,
       metadata: {
         paymentIntentId,
-        chargeId: confirmedPayment.charges.data[0].id,
-        cardBrand: confirmedPayment.payment_method.card.brand
+        chargeId,
+        cardBrand
       }
     });
+    
+    // Ensure wallet has all required fields
+    const walletResponse = {
+      walletId: updatedWallet.walletId,
+      userId: updatedWallet.userId,
+      availableBalance: updatedWallet.availableBalance || 0,
+      lockedBalance: updatedWallet.lockedBalance || 0,
+      totalBalance: (updatedWallet.availableBalance || 0) + (updatedWallet.lockedBalance || 0)
+    };
     
     res.json({
       success: true,
       payment: confirmedPayment,
-      wallet: updatedWallet,
+      wallet: walletResponse,
       message: `Successfully deposited $${depositAmount.toFixed(2)}`
     });
   } catch (error) {

@@ -51,10 +51,16 @@ export default function AddFunds() {
     try {
       setLoadingWallet(true);
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/payment/wallet/${user.userId}`
+        `${API_URL}/api/payment/wallet/${user.userId}`
       );
-      if (response.data.success) {
-        setWallet(response.data.wallet);
+      if (response.data.success && response.data.wallet) {
+        setWallet({
+          walletId: response.data.wallet.walletId,
+          userId: response.data.wallet.userId,
+          availableBalance: response.data.wallet.availableBalance || 0,
+          lockedBalance: response.data.wallet.lockedBalance || 0,
+          totalBalance: response.data.wallet.totalBalance || ((response.data.wallet.availableBalance || 0) + (response.data.wallet.lockedBalance || 0))
+        });
       }
     } catch (error) {
       console.error('Error fetching wallet:', error);
@@ -66,7 +72,7 @@ export default function AddFunds() {
   const fetchTestCards = async () => {
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/payment/test-cards`
+        `${API_URL}/api/payment/test-cards`
       );
       if (response.data.success) {
         setTestCards(response.data.testCards);
@@ -110,7 +116,7 @@ export default function AddFunds() {
     try {
       setLoading(true);
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/payment/create-intent`,
+        `${API_URL}/api/payment/create-intent`,
         {
           userId: user?.userId,
           amount: depositAmount,
@@ -144,7 +150,7 @@ export default function AddFunds() {
     try {
       setLoading(true);
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/payment/confirm`,
+        `${API_URL}/api/payment/confirm`,
         {
           userId: user?.userId,
           paymentIntentId,
@@ -161,8 +167,23 @@ export default function AddFunds() {
       );
 
       if (response.data.success) {
-        setSuccess(`Successfully deposited $${parseFloat(amount).toFixed(2)}!`);
-        setWallet(response.data.wallet);
+        const depositAmount = parseFloat(amount) || 0;
+        setSuccess(`Successfully deposited $${depositAmount.toFixed(2)}!`);
+        
+        // Update wallet with response data, ensuring all fields exist
+        if (response.data.wallet) {
+          setWallet({
+            walletId: response.data.wallet.walletId,
+            userId: response.data.wallet.userId,
+            availableBalance: response.data.wallet.availableBalance || 0,
+            lockedBalance: response.data.wallet.lockedBalance || 0,
+            totalBalance: (response.data.wallet.availableBalance || 0) + (response.data.wallet.lockedBalance || 0)
+          });
+        } else {
+          // If wallet not in response, refetch it
+          await fetchWallet();
+        }
+        
         // Reset form
         setAmount('');
         setCardNumber('');
@@ -209,17 +230,17 @@ export default function AddFunds() {
             <div>
               <p className="text-sm text-gray-600">Available Balance</p>
               <p className="text-2xl font-bold text-blue-600">
-                ${wallet.availableBalance.toFixed(2)}
+                ${(wallet.availableBalance || 0).toFixed(2)}
               </p>
             </div>
             <div className="text-right">
               <p className="text-sm text-gray-600">Total Balance</p>
               <p className="text-xl font-semibold">
-                ${wallet.totalBalance.toFixed(2)}
+                ${(wallet.totalBalance || (wallet.availableBalance || 0) + (wallet.lockedBalance || 0)).toFixed(2)}
               </p>
-              {wallet.lockedBalance > 0 && (
+              {(wallet.lockedBalance || 0) > 0 && (
                 <p className="text-xs text-gray-500">
-                  ${wallet.lockedBalance.toFixed(2)} locked
+                  ${(wallet.lockedBalance || 0).toFixed(2)} locked
                 </p>
               )}
             </div>
@@ -405,7 +426,7 @@ export default function AddFunds() {
           <div className="bg-gray-50 p-4 rounded-lg">
             <div className="flex justify-between text-sm mb-1">
               <span className="text-gray-600">Deposit Amount:</span>
-              <span className="font-semibold">${parseFloat(amount || '0').toFixed(2)}</span>
+              <span className="font-semibold">${(parseFloat(amount || '0') || 0).toFixed(2)}</span>
             </div>
           </div>
 
