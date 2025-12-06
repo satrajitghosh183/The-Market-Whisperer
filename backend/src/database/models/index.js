@@ -5,4 +5,5 @@ export { Position } from './Position.js';
 export { Order } from './Order.js';
 export { Basket } from './Basket.js';
 export { Ledger } from './Ledger.js';
+export { StockData } from './StockData.js';
 
