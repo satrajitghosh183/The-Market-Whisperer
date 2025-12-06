@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { useAuth } from '@/contexts/AuthContext';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
+import { API_URL } from '@/config/api';
 
 interface PerformanceData {
   timestamp: string;
@@ -60,7 +61,7 @@ export default function PortfolioPerformance() {
     
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/portfolio/user/${user.userId}`
+        `${API_URL}/api/portfolio/user/${user.userId}`
       );
       if (response.data.length > 0) {
         setPortfolio(response.data[0]);
@@ -88,7 +89,7 @@ export default function PortfolioPerformance() {
     try {
       // Get current performance
       const perfResponse = await axios.get(
-        `${process.env.NEXT_PUBLIC_API_URL}/api/performance/current/${portfolio.portfolioId}`,
+        `${API_URL}/api/performance/current/${portfolio.portfolioId}`,
         { params: { userId: user.userId } }
       );
 
@@ -98,7 +99,7 @@ export default function PortfolioPerformance() {
         // Get history based on time range
         const days = getDaysForRange(timeRange);
         const historyResponse = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL}/api/performance/history/${portfolio.portfolioId}`,
+          `${API_URL}/api/performance/history/${portfolio.portfolioId}`,
           { params: { userId: user.userId, days } }
         );
 
@@ -115,7 +116,7 @@ export default function PortfolioPerformance() {
         // Portfolio might not have performance data yet, create initial snapshot
         try {
           await axios.post(
-            `${process.env.NEXT_PUBLIC_API_URL}/api/performance/snapshot`,
+            `${API_URL}/api/performance/snapshot`,
             { portfolioId: portfolio.portfolioId, userId: user.userId }
           );
           // Retry fetching

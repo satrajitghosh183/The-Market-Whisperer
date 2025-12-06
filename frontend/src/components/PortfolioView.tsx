@@ -107,40 +107,43 @@ export default function PortfolioView() {
           setPortfolio(data.portfolio)
         } else if (data.type === 'ticker_update' && portfolio) {
           // Update position price when ticker updates
-          setPortfolio(prev => {
-            if (!prev) return prev
-            const updatedPositions = prev.positions?.map(pos => {
-              if (pos.ticker === data.ticker) {
-                const currentPrice = data.price || pos.avgCost
-                const currentValue = pos.shares * currentPrice
-                const costBasis = pos.shares * pos.avgCost
-                const unrealizedPnL = currentValue - costBasis
-                
-                return {
-                  ...pos,
-                  currentPrice,
-                  unrealizedPnL
+          // Only update if we have a valid price
+          if (data.price && data.price > 0) {
+            setPortfolio(prev => {
+              if (!prev) return prev
+              const updatedPositions = prev.positions?.map(pos => {
+                if (pos.ticker === data.ticker) {
+                  const currentPrice = data.price
+                  const currentValue = pos.shares * currentPrice
+                  const costBasis = pos.shares * pos.avgCost
+                  const unrealizedPnL = currentValue - costBasis
+                  
+                  return {
+                    ...pos,
+                    currentPrice,
+                    unrealizedPnL
+                  }
                 }
+                return pos
+              }) || []
+              
+              const totalValue = updatedPositions.reduce((sum, pos) => {
+                const price = pos.currentPrice || pos.avgCost
+                return sum + (pos.shares * price)
+              }, 0)
+              
+              const unrealizedPnL = updatedPositions.reduce((sum, pos) => {
+                return sum + (pos.unrealizedPnL || 0)
+              }, 0)
+              
+              return {
+                ...prev,
+                positions: updatedPositions,
+                totalValue,
+                unrealizedPnL
               }
-              return pos
-            }) || []
-            
-            const totalValue = updatedPositions.reduce((sum, pos) => {
-              const price = pos.currentPrice || pos.avgCost
-              return sum + (pos.shares * price)
-            }, 0)
-            
-            const unrealizedPnL = updatedPositions.reduce((sum, pos) => {
-              return sum + (pos.unrealizedPnL || 0)
-            }, 0)
-            
-            return {
-              ...prev,
-              positions: updatedPositions,
-              totalValue,
-              unrealizedPnL
-            }
-          })
+            })
+          }
         }
       } catch (error) {
         console.error('Error parsing WebSocket message:', error)

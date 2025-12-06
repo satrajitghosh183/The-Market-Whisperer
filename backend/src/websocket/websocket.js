@@ -83,18 +83,46 @@ async function handlePortfolioSubscription(ws, { portfolioId, userId }) {
   ws.portfolioId = portfolioId;
   ws.userId = userId;
   
-  // Send initial portfolio state
+  // Send initial portfolio state with real-time prices
   const portfolio = await dataLayer.getPortfolio(portfolioId);
   if (portfolio) {
     const positions = await dataLayer.getPortfolioPositions(portfolioId);
-    const totalValue = PortfolioManager.calculateTotalValue(positions);
-    const unrealizedPnL = PortfolioManager.calculateUnrealizedPnL(positions);
+    
+    // Fetch real-time prices for all positions
+    const positionsWithPrices = await Promise.all(
+      positions.map(async (position) => {
+        try {
+          const quote = await TwelveDataService.getRealTimeQuote(position.ticker);
+          const currentPrice = quote.close || quote.price || position.avgCost;
+          const currentValue = position.shares * currentPrice;
+          const costBasis = position.shares * position.avgCost;
+          const unrealizedPnL = currentValue - costBasis;
+          
+          return {
+            ...position,
+            currentPrice,
+            unrealizedPnL
+          };
+        } catch (error) {
+          console.warn(`Failed to fetch price for ${position.ticker} in WebSocket:`, error.message);
+          // Use avgCost as fallback
+          return {
+            ...position,
+            currentPrice: position.avgCost,
+            unrealizedPnL: 0
+          };
+        }
+      })
+    );
+    
+    const totalValue = PortfolioManager.calculateTotalValue(positionsWithPrices);
+    const unrealizedPnL = PortfolioManager.calculateUnrealizedPnL(positionsWithPrices);
     
     ws.send(JSON.stringify({
       type: 'portfolio_update',
       portfolio: {
         ...portfolio,
-        positions,
+        positions: positionsWithPrices,
         totalValue,
         unrealizedPnL
       },
@@ -294,22 +322,29 @@ async function broadcastMarketUpdates(wss) {
         if (portfolio) {
           const positions = await dataLayer.getPortfolioPositions(client.portfolioId);
           
-          // Update position prices from ticker cache
-          for (const position of positions) {
+          // Update position prices from ticker cache and calculate P&L
+          const positionsWithPrices = positions.map(position => {
             const tickerPrice = tickerPrices.get(position.ticker);
-            if (tickerPrice) {
-              position.currentPrice = tickerPrice.price;
-            }
-          }
+            const currentPrice = tickerPrice ? tickerPrice.price : (position.currentPrice || position.avgCost);
+            const currentValue = position.shares * currentPrice;
+            const costBasis = position.shares * position.avgCost;
+            const unrealizedPnL = currentValue - costBasis;
+            
+            return {
+              ...position,
+              currentPrice,
+              unrealizedPnL
+            };
+          });
           
-          const totalValue = PortfolioManager.calculateTotalValue(positions);
-          const unrealizedPnL = PortfolioManager.calculateUnrealizedPnL(positions);
+          const totalValue = PortfolioManager.calculateTotalValue(positionsWithPrices);
+          const unrealizedPnL = PortfolioManager.calculateUnrealizedPnL(positionsWithPrices);
           
           client.send(JSON.stringify({
             type: 'portfolio_update',
             portfolio: {
               ...portfolio,
-              positions,
+              positions: positionsWithPrices,
               totalValue,
               unrealizedPnL
             },
