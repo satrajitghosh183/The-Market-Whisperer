@@ -22,10 +22,35 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // CORS configuration for production
+// Normalize origin by removing trailing slashes for comparison
+const normalizeOrigin = (origin) => origin ? origin.replace(/\/+$/, '') : '';
+
+const allowedOrigins = [
+  'https://the-market-whisperer.vercel.app',
+  process.env.CORS_ORIGIN ? normalizeOrigin(process.env.CORS_ORIGIN) : null,
+].filter(Boolean);
+
 const corsOptions = {
-  origin: process.env.CORS_ORIGIN || (process.env.NODE_ENV === 'production' ? false : '*'),
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    // Normalize the incoming origin
+    const normalizedOrigin = normalizeOrigin(origin);
+    
+    // Check if origin is allowed (normalized comparison)
+    if (allowedOrigins.some(allowed => normalizeOrigin(allowed) === normalizedOrigin) || 
+        process.env.NODE_ENV !== 'production') {
+      callback(null, true);
+    } else {
+      console.warn(`CORS blocked origin: ${origin}. Allowed origins: ${allowedOrigins.join(', ')}`);
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true,
-  optionsSuccessStatus: 200
+  optionsSuccessStatus: 200,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
 };
 
 app.use(cors(corsOptions));
