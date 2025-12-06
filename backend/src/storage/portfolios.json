@@ -1,0 +1,1413 @@
+{
+  "portfolio_1762117735260": {
+    "userId": "user_1762117735257",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPB",
+      "AAPU",
+      "AGMI",
+      "AGIX",
+      "AIA",
+      "AADR",
+      "AFOS.US",
+      "AAXJ",
+      "AGEM.US",
+      "ACWI",
+      "AAVM",
+      "ACWX",
+      "ABIG.US",
+      "AFSC.US",
+      "ABCS",
+      "AGNG",
+      "AAUS.US",
+      "AGGA.US",
+      "AGZD",
+      "ABI.US"
+    ],
+    "targetWeights": {
+      "AAPB": 0.05,
+      "AAPU": 0.05,
+      "AGMI": 0.05,
+      "AGIX": 0.05,
+      "AIA": 0.05,
+      "AADR": 0.05,
+      "AFOS.US": 0.05,
+      "AAXJ": 0.05,
+      "AGEM.US": 0.05,
+      "ACWI": 0.05,
+      "AAVM": 0.05,
+      "ACWX": 0.05,
+      "ABIG.US": 0.05,
+      "AFSC.US": 0.05,
+      "ABCS": 0.05,
+      "AGNG": 0.05,
+      "AAUS.US": 0.05,
+      "AGGA.US": 0.05,
+      "AGZD": 0.05,
+      "ABI.US": 0.05
+    },
+    "portfolioId": "portfolio_1762117735260",
+    "createdAt": "2025-11-02T21:08:55.260Z"
+  },
+  "portfolio_1762133274722": {
+    "userId": "user_1762133274719",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1762133274722",
+    "createdAt": "2025-11-03T01:27:54.722Z"
+  },
+  "portfolio_1763916089921": {
+    "userId": "user_1763916089920",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916089921",
+    "createdAt": "2025-11-23T16:41:29.921Z"
+  },
+  "portfolio_1763916089930": {
+    "userId": "user_1763916089929",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089930",
+    "createdAt": "2025-11-23T16:41:29.930Z"
+  },
+  "portfolio_1763916089938": {
+    "userId": "user_1763916089938",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089938",
+    "createdAt": "2025-11-23T16:41:29.938Z"
+  },
+  "portfolio_1763916089939": {
+    "userId": "user_1763916089938",
+    "benchmark": "QQQ",
+    "strategyId": "aggressive",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089939",
+    "createdAt": "2025-11-23T16:41:29.939Z"
+  },
+  "portfolio_1763916089943": {
+    "userId": "user_1763916089942",
+    "benchmark": "QQQ",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL"
+    ],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089943",
+    "createdAt": "2025-11-23T16:41:29.943Z"
+  },
+  "portfolio_1763916089952": {
+    "userId": "user_1763916089952",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089952",
+    "createdAt": "2025-11-23T16:41:29.952Z"
+  },
+  "portfolio_1763916089957": {
+    "userId": "user_1763916089957",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089957",
+    "createdAt": "2025-11-23T16:41:29.957Z"
+  },
+  "portfolio_1763916089965": {
+    "userId": "user_1763916089965",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089965",
+    "createdAt": "2025-11-23T16:41:29.965Z"
+  },
+  "portfolio_1763916089971": {
+    "userId": "user_1763916089971",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916089971",
+    "createdAt": "2025-11-23T16:41:29.971Z"
+  },
+  "portfolio_1763916090206": {
+    "userId": "user_1763916090205",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090206",
+    "createdAt": "2025-11-23T16:41:30.206Z"
+  },
+  "portfolio_1763916090285": {
+    "userId": "user_1763916090283",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090285",
+    "createdAt": "2025-11-23T16:41:30.285Z"
+  },
+  "portfolio_1763916090364": {
+    "userId": "user_1763916090363",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090364",
+    "createdAt": "2025-11-23T16:41:30.364Z"
+  },
+  "portfolio_1763916090440": {
+    "userId": "user_1763916090439",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090440",
+    "createdAt": "2025-11-23T16:41:30.440Z"
+  },
+  "portfolio_1763916090523": {
+    "userId": "user_1763916090522",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090523",
+    "createdAt": "2025-11-23T16:41:30.523Z"
+  },
+  "portfolio_1763916090597": {
+    "userId": "user_1763916090596",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090597",
+    "createdAt": "2025-11-23T16:41:30.597Z"
+  },
+  "portfolio_1763916090911": {
+    "userId": "user_1763916090908",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916090911",
+    "createdAt": "2025-11-23T16:41:30.911Z"
+  },
+  "portfolio_1763916090971": {
+    "userId": "user_1763916090970",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916090971",
+    "createdAt": "2025-11-23T16:41:30.971Z"
+  },
+  "portfolio_1763916090980": {
+    "userId": "user_1763916090980",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916090980",
+    "createdAt": "2025-11-23T16:41:30.980Z"
+  },
+  "portfolio_1763916090991": {
+    "userId": "user_1763916090990",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916090991",
+    "createdAt": "2025-11-23T16:41:30.991Z"
+  },
+  "portfolio_1763916091002": {
+    "userId": "user_1763916091001",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091002",
+    "createdAt": "2025-11-23T16:41:31.002Z"
+  },
+  "portfolio_1763916091013": {
+    "userId": "user_1763916091012",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091013",
+    "createdAt": "2025-11-23T16:41:31.013Z"
+  },
+  "portfolio_1763916091025": {
+    "userId": "user_1763916091024",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091025",
+    "createdAt": "2025-11-23T16:41:31.025Z"
+  },
+  "portfolio_1763916091031": {
+    "userId": "user_1763916091027",
+    "benchmark": "SPY",
+    "strategyId": "quant_generated",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091031",
+    "createdAt": "2025-11-23T16:41:31.031Z"
+  },
+  "portfolio_1763916091036": {
+    "userId": "user_1763916091036",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091036",
+    "createdAt": "2025-11-23T16:41:31.036Z"
+  },
+  "portfolio_1763916091045": {
+    "userId": "user_1763916091044",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091045",
+    "createdAt": "2025-11-23T16:41:31.045Z"
+  },
+  "portfolio_1763916091053": {
+    "userId": "user_1763916091052",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091053",
+    "createdAt": "2025-11-23T16:41:31.053Z"
+  },
+  "portfolio_1763916091061": {
+    "userId": "user_1763916091060",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091061",
+    "createdAt": "2025-11-23T16:41:31.061Z"
+  },
+  "portfolio_1763916091070": {
+    "userId": "user_1763916091069",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091070",
+    "createdAt": "2025-11-23T16:41:31.070Z"
+  },
+  "portfolio_1763916091078": {
+    "userId": "user_1763916091078",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916091078",
+    "createdAt": "2025-11-23T16:41:31.078Z"
+  },
+  "portfolio_1763916091089": {
+    "userId": "user_1763916091088",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091089",
+    "createdAt": "2025-11-23T16:41:31.089Z"
+  },
+  "portfolio_1763916091099": {
+    "userId": "user_1763916091097",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091099",
+    "createdAt": "2025-11-23T16:41:31.099Z"
+  },
+  "portfolio_1763916091111": {
+    "userId": "user_1763916091109",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091111",
+    "createdAt": "2025-11-23T16:41:31.111Z"
+  },
+  "portfolio_1763916091121": {
+    "userId": "user_1763916091120",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091121",
+    "createdAt": "2025-11-23T16:41:31.121Z"
+  },
+  "portfolio_1763916091131": {
+    "userId": "user_1763916091130",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091131",
+    "createdAt": "2025-11-23T16:41:31.131Z"
+  },
+  "portfolio_1763916091140": {
+    "userId": "user_1763916091138",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091140",
+    "createdAt": "2025-11-23T16:41:31.140Z"
+  },
+  "portfolio_1763916091145": {
+    "userId": "user_1763916091144",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091145",
+    "createdAt": "2025-11-23T16:41:31.145Z"
+  },
+  "portfolio_1763916091151": {
+    "userId": "user_1763916091149",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091151",
+    "createdAt": "2025-11-23T16:41:31.151Z"
+  },
+  "portfolio_1763916091156": {
+    "userId": "user_1763916091155",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091156",
+    "createdAt": "2025-11-23T16:41:31.156Z"
+  },
+  "portfolio_1763916091163": {
+    "userId": "user_1763916091161",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091163",
+    "createdAt": "2025-11-23T16:41:31.163Z"
+  },
+  "portfolio_1763916091168": {
+    "userId": "user_1763916091167",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091168",
+    "createdAt": "2025-11-23T16:41:31.168Z"
+  },
+  "portfolio_1763916091179": {
+    "userId": "user_1763916091177",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091179",
+    "createdAt": "2025-11-23T16:41:31.179Z"
+  },
+  "portfolio_1763916091189": {
+    "userId": "user_1763916091188",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091189",
+    "createdAt": "2025-11-23T16:41:31.189Z"
+  },
+  "portfolio_1763916091194": {
+    "userId": "user_1763916091193",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091194",
+    "createdAt": "2025-11-23T16:41:31.194Z"
+  },
+  "portfolio_1763916091265": {
+    "userId": "user_1763916091264",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916091265",
+    "createdAt": "2025-11-23T16:41:31.265Z"
+  },
+  "portfolio_1763916098702": {
+    "userId": "user_1763916098701",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098702",
+    "createdAt": "2025-11-23T16:41:38.702Z"
+  },
+  "portfolio_1763916098709": {
+    "userId": "user_1763916098707",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098709",
+    "createdAt": "2025-11-23T16:41:38.709Z"
+  },
+  "portfolio_1763916098717": {
+    "userId": "user_1763916098715",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098717",
+    "createdAt": "2025-11-23T16:41:38.717Z"
+  },
+  "portfolio_1763916098723": {
+    "userId": "user_1763916098722",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098723",
+    "createdAt": "2025-11-23T16:41:38.723Z"
+  },
+  "portfolio_1763916098730": {
+    "userId": "user_1763916098729",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098730",
+    "createdAt": "2025-11-23T16:41:38.730Z"
+  },
+  "portfolio_1763916098737": {
+    "userId": "user_1763916098736",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098737",
+    "createdAt": "2025-11-23T16:41:38.737Z"
+  },
+  "portfolio_1763916098745": {
+    "userId": "user_1763916098743",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098745",
+    "createdAt": "2025-11-23T16:41:38.745Z"
+  },
+  "portfolio_1763916098751": {
+    "userId": "user_1763916098750",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098751",
+    "createdAt": "2025-11-23T16:41:38.751Z"
+  },
+  "portfolio_1763916098758": {
+    "userId": "user_1763916098756",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098758",
+    "createdAt": "2025-11-23T16:41:38.758Z"
+  },
+  "portfolio_1763916098765": {
+    "userId": "user_1763916098764",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098765",
+    "createdAt": "2025-11-23T16:41:38.765Z"
+  },
+  "portfolio_1763916098773": {
+    "userId": "user_1763916098771",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098773",
+    "createdAt": "2025-11-23T16:41:38.773Z"
+  },
+  "portfolio_1763916098780": {
+    "userId": "user_1763916098778",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098780",
+    "createdAt": "2025-11-23T16:41:38.780Z"
+  },
+  "portfolio_1763916098787": {
+    "userId": "user_1763916098786",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098787",
+    "createdAt": "2025-11-23T16:41:38.787Z"
+  },
+  "portfolio_1763916098795": {
+    "userId": "user_1763916098794",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098795",
+    "createdAt": "2025-11-23T16:41:38.795Z"
+  },
+  "portfolio_1763916098802": {
+    "userId": "user_1763916098800",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098802",
+    "createdAt": "2025-11-23T16:41:38.802Z"
+  },
+  "portfolio_1763916098810": {
+    "userId": "user_1763916098809",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098810",
+    "createdAt": "2025-11-23T16:41:38.810Z"
+  },
+  "portfolio_1763916098818": {
+    "userId": "user_1763916098816",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098818",
+    "createdAt": "2025-11-23T16:41:38.818Z"
+  },
+  "portfolio_1763916098824": {
+    "userId": "user_1763916098823",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098824",
+    "createdAt": "2025-11-23T16:41:38.824Z"
+  },
+  "portfolio_1763916098944": {
+    "userId": "user_1763916098943",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098944",
+    "createdAt": "2025-11-23T16:41:38.944Z"
+  },
+  "portfolio_1763916098948": {
+    "userId": "user_1763916098948",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098948",
+    "createdAt": "2025-11-23T16:41:38.948Z"
+  },
+  "portfolio_1763916098954": {
+    "userId": "user_1763916098954",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098954",
+    "createdAt": "2025-11-23T16:41:38.954Z"
+  },
+  "portfolio_1763916098961": {
+    "userId": "user_1763916098960",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098961",
+    "createdAt": "2025-11-23T16:41:38.961Z"
+  },
+  "portfolio_1763916098966": {
+    "userId": "user_1763916098965",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098966",
+    "createdAt": "2025-11-23T16:41:38.966Z"
+  },
+  "portfolio_1763916098971": {
+    "userId": "user_1763916098970",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098971",
+    "createdAt": "2025-11-23T16:41:38.971Z"
+  },
+  "portfolio_1763916098977": {
+    "userId": "user_1763916098976",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916098977",
+    "createdAt": "2025-11-23T16:41:38.977Z"
+  },
+  "portfolio_1763916113840": {
+    "userId": "user_1763916113839",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916113840",
+    "createdAt": "2025-11-23T16:41:53.840Z"
+  },
+  "portfolio_1763916113845": {
+    "userId": "user_1763916113845",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113845",
+    "createdAt": "2025-11-23T16:41:53.845Z"
+  },
+  "portfolio_1763916113852": {
+    "userId": "user_1763916113851",
+    "benchmark": "QQQ",
+    "strategyId": "aggressive",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113852",
+    "createdAt": "2025-11-23T16:41:53.852Z"
+  },
+  "portfolio_1763916113857": {
+    "userId": "user_1763916113856",
+    "benchmark": "QQQ",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL"
+    ],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113857",
+    "createdAt": "2025-11-23T16:41:53.857Z"
+  },
+  "portfolio_1763916113864": {
+    "userId": "user_1763916113864",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113864",
+    "createdAt": "2025-11-23T16:41:53.864Z"
+  },
+  "portfolio_1763916113869": {
+    "userId": "user_1763916113869",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113869",
+    "createdAt": "2025-11-23T16:41:53.869Z"
+  },
+  "portfolio_1763916113876": {
+    "userId": "user_1763916113875",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113876",
+    "createdAt": "2025-11-23T16:41:53.876Z"
+  },
+  "portfolio_1763916113883": {
+    "userId": "user_1763916113882",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916113883",
+    "createdAt": "2025-11-23T16:41:53.883Z"
+  },
+  "portfolio_1763916114338": {
+    "userId": "user_1763916114337",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114338",
+    "createdAt": "2025-11-23T16:41:54.338Z"
+  },
+  "portfolio_1763916114346": {
+    "userId": "user_1763916114346",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114346",
+    "createdAt": "2025-11-23T16:41:54.346Z"
+  },
+  "portfolio_1763916114354": {
+    "userId": "user_1763916114353",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114354",
+    "createdAt": "2025-11-23T16:41:54.354Z"
+  },
+  "portfolio_1763916114362": {
+    "userId": "user_1763916114362",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114362",
+    "createdAt": "2025-11-23T16:41:54.362Z"
+  },
+  "portfolio_1763916114371": {
+    "userId": "user_1763916114370",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114371",
+    "createdAt": "2025-11-23T16:41:54.371Z"
+  },
+  "portfolio_1763916114380": {
+    "userId": "user_1763916114379",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114380",
+    "createdAt": "2025-11-23T16:41:54.380Z"
+  },
+  "portfolio_1763916114383": {
+    "userId": "user_1763916114380",
+    "benchmark": "SPY",
+    "strategyId": "quant_generated",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114383",
+    "createdAt": "2025-11-23T16:41:54.383Z"
+  },
+  "portfolio_1763916114388": {
+    "userId": "user_1763916114388",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114388",
+    "createdAt": "2025-11-23T16:41:54.388Z"
+  },
+  "portfolio_1763916114397": {
+    "userId": "user_1763916114397",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114397",
+    "createdAt": "2025-11-23T16:41:54.397Z"
+  },
+  "portfolio_1763916114405": {
+    "userId": "user_1763916114404",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114405",
+    "createdAt": "2025-11-23T16:41:54.405Z"
+  },
+  "portfolio_1763916114413": {
+    "userId": "user_1763916114413",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114413",
+    "createdAt": "2025-11-23T16:41:54.413Z"
+  },
+  "portfolio_1763916114421": {
+    "userId": "user_1763916114421",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114421",
+    "createdAt": "2025-11-23T16:41:54.421Z"
+  },
+  "portfolio_1763916114431": {
+    "userId": "user_1763916114430",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [
+      "AAPL",
+      "GOOGL"
+    ],
+    "targetWeights": {
+      "AAPL": 0.5,
+      "GOOGL": 0.5
+    },
+    "portfolioId": "portfolio_1763916114431",
+    "createdAt": "2025-11-23T16:41:54.431Z"
+  },
+  "portfolio_1763916114444": {
+    "userId": "user_1763916114443",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114444",
+    "createdAt": "2025-11-23T16:41:54.444Z"
+  },
+  "portfolio_1763916114453": {
+    "userId": "user_1763916114452",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114453",
+    "createdAt": "2025-11-23T16:41:54.453Z"
+  },
+  "portfolio_1763916114463": {
+    "userId": "user_1763916114462",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114463",
+    "createdAt": "2025-11-23T16:41:54.463Z"
+  },
+  "portfolio_1763916114472": {
+    "userId": "user_1763916114472",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114472",
+    "createdAt": "2025-11-23T16:41:54.472Z"
+  },
+  "portfolio_1763916114481": {
+    "userId": "user_1763916114480",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114481",
+    "createdAt": "2025-11-23T16:41:54.481Z"
+  },
+  "portfolio_1763916114490": {
+    "userId": "user_1763916114489",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114490",
+    "createdAt": "2025-11-23T16:41:54.490Z"
+  },
+  "portfolio_1763916114495": {
+    "userId": "user_1763916114494",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114495",
+    "createdAt": "2025-11-23T16:41:54.495Z"
+  },
+  "portfolio_1763916114501": {
+    "userId": "user_1763916114499",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114501",
+    "createdAt": "2025-11-23T16:41:54.501Z"
+  },
+  "portfolio_1763916114505": {
+    "userId": "user_1763916114504",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114505",
+    "createdAt": "2025-11-23T16:41:54.505Z"
+  },
+  "portfolio_1763916114511": {
+    "userId": "user_1763916114510",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114511",
+    "createdAt": "2025-11-23T16:41:54.511Z"
+  },
+  "portfolio_1763916114515": {
+    "userId": "user_1763916114514",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114515",
+    "createdAt": "2025-11-23T16:41:54.515Z"
+  },
+  "portfolio_1763916114525": {
+    "userId": "user_1763916114524",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114525",
+    "createdAt": "2025-11-23T16:41:54.525Z"
+  },
+  "portfolio_1763916114534": {
+    "userId": "user_1763916114532",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114534",
+    "createdAt": "2025-11-23T16:41:54.534Z"
+  },
+  "portfolio_1763916114539": {
+    "userId": "user_1763916114538",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114539",
+    "createdAt": "2025-11-23T16:41:54.539Z"
+  },
+  "portfolio_1763916114580": {
+    "userId": "user_1763916114579",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916114580",
+    "createdAt": "2025-11-23T16:41:54.580Z"
+  },
+  "portfolio_1763916122027": {
+    "userId": "user_1763916122025",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122027",
+    "createdAt": "2025-11-23T16:42:02.027Z"
+  },
+  "portfolio_1763916122032": {
+    "userId": "user_1763916122031",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122032",
+    "createdAt": "2025-11-23T16:42:02.032Z"
+  },
+  "portfolio_1763916122039": {
+    "userId": "user_1763916122038",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122039",
+    "createdAt": "2025-11-23T16:42:02.039Z"
+  },
+  "portfolio_1763916122045": {
+    "userId": "user_1763916122044",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122045",
+    "createdAt": "2025-11-23T16:42:02.045Z"
+  },
+  "portfolio_1763916122051": {
+    "userId": "user_1763916122049",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122051",
+    "createdAt": "2025-11-23T16:42:02.051Z"
+  },
+  "portfolio_1763916122056": {
+    "userId": "user_1763916122055",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122056",
+    "createdAt": "2025-11-23T16:42:02.056Z"
+  },
+  "portfolio_1763916122061": {
+    "userId": "user_1763916122060",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122061",
+    "createdAt": "2025-11-23T16:42:02.061Z"
+  },
+  "portfolio_1763916122066": {
+    "userId": "user_1763916122065",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122066",
+    "createdAt": "2025-11-23T16:42:02.066Z"
+  },
+  "portfolio_1763916122072": {
+    "userId": "user_1763916122071",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122072",
+    "createdAt": "2025-11-23T16:42:02.072Z"
+  },
+  "portfolio_1763916122079": {
+    "userId": "user_1763916122077",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122079",
+    "createdAt": "2025-11-23T16:42:02.079Z"
+  },
+  "portfolio_1763916122085": {
+    "userId": "user_1763916122084",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122085",
+    "createdAt": "2025-11-23T16:42:02.085Z"
+  },
+  "portfolio_1763916122091": {
+    "userId": "user_1763916122090",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122091",
+    "createdAt": "2025-11-23T16:42:02.091Z"
+  },
+  "portfolio_1763916122097": {
+    "userId": "user_1763916122096",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122097",
+    "createdAt": "2025-11-23T16:42:02.097Z"
+  },
+  "portfolio_1763916122104": {
+    "userId": "user_1763916122102",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122104",
+    "createdAt": "2025-11-23T16:42:02.104Z"
+  },
+  "portfolio_1763916122110": {
+    "userId": "user_1763916122109",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122110",
+    "createdAt": "2025-11-23T16:42:02.110Z"
+  },
+  "portfolio_1763916122117": {
+    "userId": "user_1763916122115",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122117",
+    "createdAt": "2025-11-23T16:42:02.117Z"
+  },
+  "portfolio_1763916122123": {
+    "userId": "user_1763916122122",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122123",
+    "createdAt": "2025-11-23T16:42:02.123Z"
+  },
+  "portfolio_1763916122129": {
+    "userId": "user_1763916122128",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122129",
+    "createdAt": "2025-11-23T16:42:02.129Z"
+  },
+  "portfolio_1763916122238": {
+    "userId": "user_1763916122237",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122238",
+    "createdAt": "2025-11-23T16:42:02.238Z"
+  },
+  "portfolio_1763916122243": {
+    "userId": "user_1763916122242",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122243",
+    "createdAt": "2025-11-23T16:42:02.243Z"
+  },
+  "portfolio_1763916122248": {
+    "userId": "user_1763916122247",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122248",
+    "createdAt": "2025-11-23T16:42:02.248Z"
+  },
+  "portfolio_1763916122254": {
+    "userId": "user_1763916122253",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122254",
+    "createdAt": "2025-11-23T16:42:02.254Z"
+  },
+  "portfolio_1763916122259": {
+    "userId": "user_1763916122258",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122259",
+    "createdAt": "2025-11-23T16:42:02.259Z"
+  },
+  "portfolio_1763916122264": {
+    "userId": "user_1763916122263",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122264",
+    "createdAt": "2025-11-23T16:42:02.264Z"
+  },
+  "portfolio_1763916122270": {
+    "userId": "user_1763916122269",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1763916122270",
+    "createdAt": "2025-11-23T16:42:02.270Z"
+  },
+  "portfolio_1764613354286": {
+    "userId": "user_1764613354283",
+    "benchmark": "SPY",
+    "strategyId": "default",
+    "holdings": [],
+    "targetWeights": {},
+    "portfolioId": "portfolio_1764613354286",
+    "createdAt": "2025-12-01T18:22:34.286Z"
+  }
+}

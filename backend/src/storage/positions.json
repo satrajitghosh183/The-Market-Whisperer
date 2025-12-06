@@ -1,0 +1,340 @@
+{
+  "position_1762118254644": {
+    "portfolioId": "portfolio_1762117735260",
+    "ticker": "AADR",
+    "shares": 100,
+    "avgCost": 85.96,
+    "currentPrice": 85.96,
+    "lastTradePrice": 85.96,
+    "positionId": "position_1762118254644",
+    "createdAt": "2025-11-02T21:17:34.644Z"
+  },
+  "position_1762130107528": {
+    "portfolioId": "portfolio_1762117735260",
+    "ticker": "AAPD",
+    "shares": 5,
+    "avgCost": 14.67,
+    "currentPrice": 14.67,
+    "lastTradePrice": 14.67,
+    "positionId": "position_1762130107528",
+    "createdAt": "2025-11-03T00:35:07.528Z"
+  },
+  "position_1762275495127": {
+    "portfolioId": "portfolio_1762133274722",
+    "ticker": "ACWI",
+    "shares": 10,
+    "avgCost": 137.76,
+    "currentPrice": 137.76,
+    "lastTradePrice": 137.76,
+    "positionId": "position_1762275495127",
+    "createdAt": "2025-11-04T16:58:15.127Z"
+  },
+  "position_1762290929316": {
+    "portfolioId": "portfolio_1762133274722",
+    "ticker": "AGMI",
+    "shares": 5,
+    "avgCost": 49.8997,
+    "currentPrice": 49.8997,
+    "lastTradePrice": 49.8997,
+    "positionId": "position_1762290929316",
+    "createdAt": "2025-11-04T21:15:29.316Z"
+  },
+  "position_1763916089953": {
+    "portfolioId": "portfolio_1763916089952",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 155,
+    "positionId": "position_1763916089953",
+    "createdAt": "2025-11-23T16:41:29.953Z"
+  },
+  "position_1763916089958": {
+    "portfolioId": "portfolio_1763916089957",
+    "ticker": "GOOGL",
+    "shares": 5,
+    "avgCost": 2000,
+    "currentPrice": 2100,
+    "positionId": "position_1763916089958",
+    "createdAt": "2025-11-23T16:41:29.958Z"
+  },
+  "position_1763916089966": {
+    "portfolioId": "portfolio_1763916089965",
+    "ticker": "MSFT",
+    "shares": 5,
+    "avgCost": 300,
+    "currentPrice": 310,
+    "positionId": "position_1763916089966",
+    "createdAt": "2025-11-23T16:41:29.966Z"
+  },
+  "position_1763916089972": {
+    "portfolioId": "portfolio_1763916089971",
+    "ticker": "AAPL",
+    "shares": 15,
+    "avgCost": 150,
+    "currentPrice": 160,
+    "positionId": "position_1763916089972",
+    "createdAt": "2025-11-23T16:41:29.972Z"
+  },
+  "position_1763916090992": {
+    "portfolioId": "portfolio_1763916090991",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 155,
+    "positionId": "position_1763916090992",
+    "createdAt": "2025-11-23T16:41:30.992Z"
+  },
+  "position_1763916091070": {
+    "portfolioId": "portfolio_1763916091070",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 150,
+    "positionId": "position_1763916091070",
+    "createdAt": "2025-11-23T16:41:31.070Z"
+  },
+  "position_1763916091071": {
+    "portfolioId": "portfolio_1763916091070",
+    "ticker": "GOOGL",
+    "shares": 5,
+    "avgCost": 2000,
+    "currentPrice": 2000,
+    "positionId": "position_1763916091071",
+    "createdAt": "2025-11-23T16:41:31.071Z"
+  },
+  "position_1763916091079": {
+    "portfolioId": "portfolio_1763916091078",
+    "ticker": "GOOGL",
+    "shares": 5,
+    "avgCost": 2000,
+    "currentPrice": 2000,
+    "positionId": "position_1763916091079",
+    "createdAt": "2025-11-23T16:41:31.079Z"
+  },
+  "position_1763916091169": {
+    "portfolioId": "portfolio_1763916091168",
+    "ticker": "SPY",
+    "shares": 10,
+    "avgCost": 400,
+    "currentPrice": 400,
+    "positionId": "position_1763916091169",
+    "createdAt": "2025-11-23T16:41:31.169Z"
+  },
+  "position_1763916091179": {
+    "portfolioId": "portfolio_1763916091179",
+    "ticker": "SPY",
+    "shares": 10,
+    "avgCost": 400,
+    "currentPrice": 400,
+    "positionId": "position_1763916091179",
+    "createdAt": "2025-11-23T16:41:31.179Z"
+  },
+  "position_1763916098759": {
+    "portfolioId": "portfolio_1763916098758",
+    "ticker": "AAPL",
+    "shares": 5,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916098759",
+    "createdAt": "2025-11-23T16:41:38.759Z"
+  },
+  "position_1763916098767": {
+    "portfolioId": "portfolio_1763916098765",
+    "ticker": "AAPL",
+    "shares": 20,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916098767",
+    "createdAt": "2025-11-23T16:41:38.767Z"
+  },
+  "position_1763916098773": {
+    "portfolioId": "portfolio_1763916098773",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916098773",
+    "createdAt": "2025-11-23T16:41:38.773Z"
+  },
+  "position_1763916098781": {
+    "portfolioId": "portfolio_1763916098780",
+    "ticker": "AAPL",
+    "shares": 5,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916098781",
+    "createdAt": "2025-11-23T16:41:38.781Z"
+  },
+  "position_1763916098811": {
+    "portfolioId": "portfolio_1763916098810",
+    "ticker": "SPY",
+    "shares": 10,
+    "avgCost": 400,
+    "currentPrice": 400,
+    "positionId": "position_1763916098811",
+    "createdAt": "2025-11-23T16:41:38.811Z"
+  },
+  "position_1763916098955": {
+    "portfolioId": "portfolio_1763916098954",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 155,
+    "positionId": "position_1763916098955",
+    "createdAt": "2025-11-23T16:41:38.955Z"
+  },
+  "position_1763916113865": {
+    "portfolioId": "portfolio_1763916113864",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 155,
+    "positionId": "position_1763916113865",
+    "createdAt": "2025-11-23T16:41:53.865Z"
+  },
+  "position_1763916113870": {
+    "portfolioId": "portfolio_1763916113869",
+    "ticker": "GOOGL",
+    "shares": 5,
+    "avgCost": 2000,
+    "currentPrice": 2100,
+    "positionId": "position_1763916113870",
+    "createdAt": "2025-11-23T16:41:53.870Z"
+  },
+  "position_1763916113878": {
+    "portfolioId": "portfolio_1763916113876",
+    "ticker": "MSFT",
+    "shares": 5,
+    "avgCost": 300,
+    "currentPrice": 310,
+    "positionId": "position_1763916113878",
+    "createdAt": "2025-11-23T16:41:53.878Z"
+  },
+  "position_1763916113883": {
+    "portfolioId": "portfolio_1763916113883",
+    "ticker": "AAPL",
+    "shares": 15,
+    "avgCost": 150,
+    "currentPrice": 160,
+    "positionId": "position_1763916113883",
+    "createdAt": "2025-11-23T16:41:53.883Z"
+  },
+  "position_1763916114355": {
+    "portfolioId": "portfolio_1763916114354",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 155,
+    "positionId": "position_1763916114355",
+    "createdAt": "2025-11-23T16:41:54.355Z"
+  },
+  "position_1763916114422": {
+    "portfolioId": "portfolio_1763916114421",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 150,
+    "positionId": "position_1763916114422",
+    "createdAt": "2025-11-23T16:41:54.422Z"
+  },
+  "position_1763916114423": {
+    "portfolioId": "portfolio_1763916114421",
+    "ticker": "GOOGL",
+    "shares": 5,
+    "avgCost": 2000,
+    "currentPrice": 2000,
+    "positionId": "position_1763916114423",
+    "createdAt": "2025-11-23T16:41:54.423Z"
+  },
+  "position_1763916114432": {
+    "portfolioId": "portfolio_1763916114431",
+    "ticker": "GOOGL",
+    "shares": 5,
+    "avgCost": 2000,
+    "currentPrice": 2000,
+    "positionId": "position_1763916114432",
+    "createdAt": "2025-11-23T16:41:54.432Z"
+  },
+  "position_1763916114516": {
+    "portfolioId": "portfolio_1763916114515",
+    "ticker": "SPY",
+    "shares": 10,
+    "avgCost": 400,
+    "currentPrice": 400,
+    "positionId": "position_1763916114516",
+    "createdAt": "2025-11-23T16:41:54.516Z"
+  },
+  "position_1763916114526": {
+    "portfolioId": "portfolio_1763916114525",
+    "ticker": "SPY",
+    "shares": 10,
+    "avgCost": 400,
+    "currentPrice": 400,
+    "positionId": "position_1763916114526",
+    "createdAt": "2025-11-23T16:41:54.526Z"
+  },
+  "position_1763916122073": {
+    "portfolioId": "portfolio_1763916122072",
+    "ticker": "AAPL",
+    "shares": 5,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916122073",
+    "createdAt": "2025-11-23T16:42:02.073Z"
+  },
+  "position_1763916122080": {
+    "portfolioId": "portfolio_1763916122079",
+    "ticker": "AAPL",
+    "shares": 20,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916122080",
+    "createdAt": "2025-11-23T16:42:02.080Z"
+  },
+  "position_1763916122086": {
+    "portfolioId": "portfolio_1763916122085",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916122086",
+    "createdAt": "2025-11-23T16:42:02.086Z"
+  },
+  "position_1763916122092": {
+    "portfolioId": "portfolio_1763916122091",
+    "ticker": "AAPL",
+    "shares": 5,
+    "avgCost": 145,
+    "currentPrice": 150,
+    "positionId": "position_1763916122092",
+    "createdAt": "2025-11-23T16:42:02.092Z"
+  },
+  "position_1763916122118": {
+    "portfolioId": "portfolio_1763916122117",
+    "ticker": "SPY",
+    "shares": 10,
+    "avgCost": 400,
+    "currentPrice": 400,
+    "positionId": "position_1763916122118",
+    "createdAt": "2025-11-23T16:42:02.118Z"
+  },
+  "position_1763916122249": {
+    "portfolioId": "portfolio_1763916122248",
+    "ticker": "AAPL",
+    "shares": 10,
+    "avgCost": 150,
+    "currentPrice": 155,
+    "positionId": "position_1763916122249",
+    "createdAt": "2025-11-23T16:42:02.249Z"
+  },
+  "position_1764613673184": {
+    "portfolioId": "portfolio_1764613354286",
+    "ticker": "AALG",
+    "shares": 100,
+    "avgCost": 12.8924,
+    "currentPrice": 12.8924,
+    "lastTradePrice": 12.8924,
+    "positionId": "position_1764613673184",
+    "createdAt": "2025-12-01T18:27:53.184Z"
+  }
+}

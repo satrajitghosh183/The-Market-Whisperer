@@ -1,0 +1,29 @@
+services:
+  - type: web
+    name: market-whisperer-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: USE_MONGODB
+        value: "true"
+      - key: NEWS_API_KEY
+        sync: false
+      - key: TWELVE_DATA_API_KEY
+        sync: false
+      - key: HUGGINGFACE_API_KEY
+        sync: false
+      - key: HUGGINGFACE_INFERENCE_API_KEY
+        sync: false
+      - key: USE_HUGGINGFACE_INFERENCE_API
+        value: "false"
+      - key: CORS_ORIGIN
+        sync: false
+

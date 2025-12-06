@@ -1,0 +1,168 @@
+{
+  "basket_1762118249630": {
+    "symbol": "AADR",
+    "netQuantity": 100,
+    "orders": [
+      "order_1762118249629_rgqz85zn2"
+    ],
+    "windowTime": "2025-11-02T21:17:34.630Z",
+    "basketId": "basket_1762118249630",
+    "createdAt": "2025-11-02T21:17:29.630Z",
+    "userCount": 1,
+    "status": "executed",
+    "executedAt": "2025-11-02T21:17:34.648Z"
+  },
+  "basket_1762130102520": {
+    "symbol": "AAPD",
+    "netQuantity": 5,
+    "orders": [
+      "order_1762130102519_6g6pds1sv"
+    ],
+    "windowTime": "2025-11-03T00:35:07.520Z",
+    "basketId": "basket_1762130102520",
+    "createdAt": "2025-11-03T00:35:02.520Z",
+    "userCount": 1,
+    "status": "executed",
+    "executedAt": "2025-11-03T00:35:07.531Z"
+  },
+  "basket_1762275490125": {
+    "symbol": "ACWI",
+    "netQuantity": 10,
+    "orders": [
+      "order_1762275490124_b6cgdhwnl"
+    ],
+    "windowTime": "2025-11-04T16:58:15.125Z",
+    "basketId": "basket_1762275490125",
+    "createdAt": "2025-11-04T16:58:10.125Z",
+    "userCount": 1,
+    "status": "executed",
+    "executedAt": "2025-11-04T16:58:15.129Z"
+  },
+  "basket_1762290924300": {
+    "symbol": "AGMI",
+    "netQuantity": 5,
+    "orders": [
+      "order_1762290924296_n5aghs8hg"
+    ],
+    "windowTime": "2025-11-04T21:15:29.299Z",
+    "basketId": "basket_1762290924300",
+    "createdAt": "2025-11-04T21:15:24.300Z",
+    "userCount": 1,
+    "status": "executed",
+    "executedAt": "2025-11-04T21:15:29.325Z"
+  },
+  "basket_1763916090014": {
+    "symbol": "AAPL",
+    "netQuantity": 0,
+    "orders": [],
+    "basketId": "basket_1763916090014",
+    "createdAt": "2025-11-23T16:41:30.014Z"
+  },
+  "basket_1763916090017": {
+    "symbol": "GOOGL",
+    "netQuantity": 0,
+    "orders": [],
+    "basketId": "basket_1763916090017",
+    "createdAt": "2025-11-23T16:41:30.017Z"
+  },
+  "basket_1763916090024": {
+    "symbol": "MSFT",
+    "netQuantity": 10,
+    "orders": [],
+    "basketId": "basket_1763916090024",
+    "createdAt": "2025-11-23T16:41:30.024Z",
+    "status": "executed"
+  },
+  "basket_1763916091103": {
+    "symbol": "AAPL",
+    "netQuantity": 80,
+    "orders": [
+      "order_1763916091103_ps01r99ej",
+      "order_1763916091203_wmw358vek",
+      "order_1763916091208_x21vo9hc1",
+      "order_1763916091209_pc2bxmjbg",
+      "order_1763916091231_j3gr99g7v",
+      "order_1763916091232_o9zqnx77x",
+      "order_1763916091239_0yr7ft5li",
+      "order_1763916091240_7nhttk79f",
+      "order_1763916091246_hh03ovovk",
+      "order_1763916091266_ar6i5oj8t",
+      "order_1763916091267_s56llcejw"
+    ],
+    "windowTime": "2025-11-23T16:41:36.103Z",
+    "basketId": "basket_1763916091103",
+    "createdAt": "2025-11-23T16:41:31.103Z",
+    "userCount": 8,
+    "status": "executed",
+    "executedAt": "2025-11-23T16:41:36.117Z"
+  },
+  "basket_1763916113922": {
+    "symbol": "AAPL",
+    "netQuantity": 0,
+    "orders": [],
+    "basketId": "basket_1763916113922",
+    "createdAt": "2025-11-23T16:41:53.922Z"
+  },
+  "basket_1763916113926": {
+    "symbol": "GOOGL",
+    "netQuantity": 0,
+    "orders": [],
+    "basketId": "basket_1763916113926",
+    "createdAt": "2025-11-23T16:41:53.926Z"
+  },
+  "basket_1763916113931": {
+    "symbol": "MSFT",
+    "netQuantity": 10,
+    "orders": [],
+    "basketId": "basket_1763916113931",
+    "createdAt": "2025-11-23T16:41:53.932Z",
+    "status": "executed"
+  },
+  "basket_1763916114457": {
+    "symbol": "AAPL",
+    "netQuantity": 80,
+    "orders": [
+      "order_1763916114456_xn8qnaxf4",
+      "order_1763916114547_vo1s7ctrl",
+      "order_1763916114553_71ok27ull",
+      "order_1763916114553_q6ohmhi8w",
+      "order_1763916114558_iovysf2d5",
+      "order_1763916114559_reoe92cf1",
+      "order_1763916114564_s66grl5z4",
+      "order_1763916114565_2douh5dw8",
+      "order_1763916114571_j2qp3qs5j",
+      "order_1763916114581_o2rsmrw9h",
+      "order_1763916114581_84n26ec3k"
+    ],
+    "windowTime": "2025-11-23T16:41:59.457Z",
+    "basketId": "basket_1763916114457",
+    "createdAt": "2025-11-23T16:41:54.457Z",
+    "userCount": 8,
+    "status": "executed",
+    "executedAt": "2025-11-23T16:41:59.468Z"
+  },
+  "basket_1764613668173": {
+    "symbol": "AALG",
+    "netQuantity": 100,
+    "orders": [
+      "order_1764613668171_219pnymg3"
+    ],
+    "windowTime": "2025-12-01T18:27:53.173Z",
+    "basketId": "basket_1764613668173",
+    "createdAt": "2025-12-01T18:27:48.173Z",
+    "userCount": 1,
+    "status": "executed",
+    "executedAt": "2025-12-01T18:27:53.187Z"
+  },
+  "basket_1764628403645": {
+    "symbol": "AADR",
+    "netQuantity": 100,
+    "orders": [
+      "order_1764628403644_kqw4g081j"
+    ],
+    "windowTime": "2025-12-01T22:33:28.645Z",
+    "basketId": "basket_1764628403645",
+    "createdAt": "2025-12-01T22:33:23.645Z",
+    "userCount": 1
+  }
+}
