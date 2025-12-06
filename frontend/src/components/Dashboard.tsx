@@ -21,7 +21,18 @@ export default function Dashboard() {
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <h1 className="text-2xl font-bold text-gray-900">Market Whisperer</h1>
+            <div className="flex items-center gap-3">
+              <img 
+                src="/logo.png" 
+                alt="Market Whisperer Logo" 
+                className="h-8 w-8"
+                onError={(e) => {
+                  // Hide image if it doesn't exist
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+              <h1 className="text-2xl font-bold text-gray-900">Market Whisperer</h1>
+            </div>
             <div className="flex items-center gap-4">
               <span className="text-sm text-gray-600">{user?.email}</span>
               <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium">
