@@ -215,7 +215,7 @@ Create a `.env` file in the `backend/` directory:
 
 ```env
 # MongoDB Configuration
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/market-whisperer?retryWrites=true&w=majority
+MONGODB_URI=
 USE_MONGODB=true
 
 # Server Configuration
