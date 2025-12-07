@@ -1,0 +1,11 @@
+{
+  "/hedging/page": "app/hedging/page.js",
+  "/page": "app/page.js",
+  "/stock/[ticker]/page": "app/stock/[ticker]/page.js",
+  "/news/page": "app/news/page.js",
+  "/wallet/page": "app/wallet/page.js",
+  "/api/hedge/route": "app/api/hedge/route.js",
+  "/reports/page": "app/reports/page.js",
+  "/api/report/route": "app/api/report/route.js",
+  "/portfolio/page": "app/portfolio/page.js"
+}
