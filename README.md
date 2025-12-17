@@ -592,7 +592,9 @@ MIT License
 
 **Trading Platform Team**
 - Satrajit Ghosh
-- Team Members
+- Mathew Kubiak
+- Lin Xia
+- Kalyan Cherevu 
 
 **Course:** Programming Finance  
 **Institution:** Rutgers University  
